@@ -1,0 +1,15 @@
+package selePrograms;
+
+import org.testng.annotations.Test;
+
+import dataPckg.DataProviderSet;
+
+public class Example_RegisterUsingDataProvider {
+	@Test(dataProviderClass = DataProviderSet.class,  dataProvider = "registerData")
+	public void verifyRegisterAccount(String fName, String lName, long phNo, String email) {
+		System.out.println(fName);
+		System.out.println(lName);
+		System.out.println(phNo);
+		System.out.println(email);
+	}
+}

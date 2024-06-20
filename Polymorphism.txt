@@ -1,0 +1,37 @@
+Abstraction: hiding the implementation details and showing only functionalities to the user is called abstraction.
+ex:-  it shows only essential things to the user and hides the internal details,
+		sending SMS where you type the text and send the message. You don't know the internal processing about the message delivery.
+We can achieve abstraction in java through abstract classes and interfaces.
+
+Abstract Class:- Abstract class has a key word abstract. An abstract class cam have both abstract and concrete methods.
+	abstract method is nothing but a method without body. we can achieve 0-100% abstraction.
+	all the abstract methods of abstract class must be implemented in its child class.
+Abstract class cannot be instantiated. An abstract class can be extended by a class using keyword called Extends.
+--------------------------------------------------==========--------------------------
+Interfaces:- interface is a blue print of a class, keyword interface.
+we can achieve 100% abstraction through interfaces,.
+all the methods of an interface must be implemented in its implemented classes.
+interfaces cannot be instantiated,
+by default all the interfaces are public, static and final.
+Interface is implemented by a class, by using keyword implements.
+multiple inheritance through interfaces.
+==============================================================================================
+		   abstraction class:             					  			 interface:
+	Abstract cls has a keyword abstract 					  interface has a keyword interface
+	Abstract cls can have abstract-concrete methods    		  interface by default, all methods are abstract methods
+	achieve 0-100% abstraction						   can achieve 100% abstraction
+	multiple inheritance not possible using abstract 		   multiple inheritance possible using interfaces
+	can have Static, non static, final, non final variables			by default all the variables are static and final. 
+	Can have the data members/class membrs
+	(public, private, protected, default access modifiers)	 by default all the data members are Public
+	Can be extended by using keyword Extends.			Can be implemented by keyword Implements.	
+===============================================================================================	
+ 
+
+
+
+
+
+
+
+				 

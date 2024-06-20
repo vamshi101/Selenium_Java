@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Practice_Selenium&apos; to &apos;Maven_Selenium&apos;" description="Rename resource &apos;Practice_Selenium&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Practice_Selenium" name="Maven_Selenium" stamp="1718691470261" updateReferences="true"/>
+</session>

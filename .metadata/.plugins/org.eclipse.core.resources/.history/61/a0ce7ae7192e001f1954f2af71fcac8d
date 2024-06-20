@@ -1,0 +1,37 @@
+package practice_sel;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+
+public class First_Test {
+	WebDriver driver;
+  @Test
+  public void verifySignup() {
+	  driver.findElement(By.xpath("//span[@class='_ap3a _aaco _aacw _aad0 _aad7']")).click();
+	
+	  
+  }
+
+	  
+  
+  @BeforeTest
+  public void beforeTest() {
+	  WebDriver driver=new ChromeDriver();
+	  driver.manage().window().maximize();
+	  driver.get("https://www.instagram.com/");
+	  
+	  
+  }
+
+  @AfterTest
+  public void afterTest() {
+  }
+
+}

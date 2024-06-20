@@ -1,0 +1,100 @@
+Fluent wait:
+-----------
+The fluent wait in selenium is used to define max time for the web driver to wait the condition as well as the frequency with whcih we want to check the condition before throwing an "ElementNotVisibleExecption" exception it checks for the web element at regular intervals until the objects is found or timeout happens
+
+Frequency:
+---------
+Setting up a repeat cycle with the time frame to verify or check the condition at regular interval of time
+
+Fluent wait syntax:
+-----------------
+Wait wait = new FluentWait(WebDriver reference)
+.withTimeout(timeout, SECONDS)
+.pollingEvery(timeout, SECONDS)
+.ignoring(Exception.class);
+
+=========================================================================================================================================
+
+Framework:
+---------
+The Selenium framework is a code structure that makes code maintaince is easy and efficient
+Without framework user may have place the code and data at same location which either re-uasble and re-readable. Framework produce benificial outcomes like increase code, reuseabilty, higher propability, reduce cost of Script, mantains better code and ratebility.
+
+There are 6 frameworks
+1) Linear framework
+2) Modular framework
+3) Data driven framework
+4) Keyword driven test framework
+5) Hybrid framework
+6) Behaviour data driven framework(EX:-Cucumber framework)
+ 
+
+1) Linear framework:
+-------------------
+It is a basic framework that is writing a code one after to another line
+
+2) Modular framework:
+--------------------
+It is defining each and every functionality has different reuasibilty methods and using this methods in actual test it is called modular framework
+
+3) Data driven framework:
+------------------------
+Using of external file such as word, notepad, excel file etc. for test data and test result and for test execution is called Data driven framework
+
+4) Keyword driven test framework:
+--------------------------------
+Defining each and every functionality as reusable methods and naming them as keywords. Using these keyword in the test cases(Actual tests)
+EX: Junit, testNg(test next generation)
+
+5) Hybrid framework:
+-------------------
+Uisng 2 or more frameworks together is called hybrid framework
+
+6) Behaviour data driven(BDD) framework:
+----------------------------------
+BDD transfers from the TDD(Test Driven Development) which allows the users to work with multiple test data with min intervention in the software code and there by helps to increase the reuseability of the code, which is a time saving mechanism in software devlopment or test Automation
+
+Cucumber framework:
+------------------
+In selenium it allows test scenarios to be written using natural languages construct that describes the excepted behaviour of the software for given scenario it is understand by the business people
+
+==========================================================================================================================================
+Handling frames:
+---------------
+ Sometimes even our locater is correct but the selenium will not identify the element and throws an exception as "NoSuchElementException" and enable to find the element with the locator
+ In such cases check weather the element is under any frame or iframe so we need to switch to the frame and need to perfrom an action to the element 
+
+
+Methods to Handle frames:
+------------------------
+1) switchTo.frame(int frameNumber)
+2) switchTo.frame(string frameName)
+3) switchTo.frame(WebElement frameElement)
+4) switchTo().defaultContent()
+5) switchTo().parentframe()
+
+1) switchTo.frame(int frameNumber):
+----------------------------------
+- This method is used to switch to the frame by using framenumber or frameid 
+- Always frameid is starts from 0(zero)
+- It throws "NoSuchFrameException" if the required frame is not avaliable
+
+2) switchTo.frame(string frameName):
+-----------------------------------
+- This method is used to switch to the frame with respect to its name
+- It name can be found in the DOM(Document Object Model) 
+- This method throws "NoSuchFrameException" if the required frame is not avaliable
+
+3) switchTo.frame(WebElement frameElement):
+------------------------------------------
+- This method allows user to switch to frame based on the location of the web element
+- This method throws "NoSuchFrameException" if the required frame is not present on the web page
+
+Note:
+----
+"StaleElementReferenceExecption" is the frame displayed on the web page is not active
+
+4) switchTo().defaultContent():
+------------------------------
+- switch back and forth between iframes and parentframes can be achieved using driver.switchTo().defaultContent()
+- The differnce between driver.switchTo().defaultContent() and driver.switchTo().parentframe() is that the first method switches the control to the main web page reagardless of the member of frames within the web page while the second method switches the control to the parent frame of the current frame

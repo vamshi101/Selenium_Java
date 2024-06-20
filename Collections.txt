@@ -1,0 +1,60 @@
+Collection Framework:
+  Collection framework represents a Group of Objects as a single unit.Collection framework in java is a framework provides an architecture to store and manipulate group of objects.
+
+Collection is an interface used to represent group of objects as a single unit.
+
+Listinterface:
+  Listinterface is child interface of collection interface and it is implemented by arraylist and Linkedlist classes.
+if you want to represents group of objects as a singleunit.Where duplicate values are allowed and insertion order is preserved then we go for list.
+The values in a list are stored index wise.
+we can search the values  remove and insert operations can be done on a list based on its Index.
+
+Arraylist:
+If you want to represent group of objects as a single unit where duplicate values allowed insertion order is preserved.
+if our frequent operation is search then we can go for arraylist as it implements random access interface.
+
+Linkedlist:
+if you want to represent group of objects single unit where duplicate values allowed insertion order is preserved then we go for Linkedlist.
+If our frequent operation is addition or deletion of an object in a list then we go for linkedlist because it implements double linkedlist data Structure.
+
+SET interface:
+It is a child interface of collection interface and it is implemented by hashset and linkedhashset and Treeset classes and it is extends to sortable set and Navigableset interfaces.
+If you want to represent group of objects as a single unit.duplicate values are not allowed then we go for Set
+
+Hashset:
+if you want represent group of objects as single unit where duplicate values are not allowed and insertion order is not preserved then we go for hashset.
+
+LinkedHashset:
+if you want represents group of objects as single unit where duplicate values are not allowed and insertion order is preserved then we can go for Linkedhashset.
+
+Treeset:
+if you want represents group of objects in single unit where duplicate values are not allowed and values are inserted in ascending order by default then we go for Treeset.
+
+Map:
+ Map is not a child interface of collection but map also considered under Collection framework.if you want to represent group of objects as singleunit as key value pairs we go for map.
+map interface is implemented by hashmap,linkedhashmap and treemap classes and extended by sortable map and navigablemap iterfaces.
+
+Hashmap:
+if you want to represent group of objects as key values pairs where insertion order is not preserved where one null key and multiple null values are allowed and duplicate Keys are not allowed, and duplicate values are allowed then we go for Hashmap.
+
+Linkedhashmap:
+if you want to represents a group of objects as key value pairs where insertion order is presered and one null key and multiple null values 
+are allowed and duplicates keys arenot allowed we go for linkedhashmap.
+
+TreeMap:
+if you want to represent group of objects as key values pairs where entries(entry=key&value)are stored in ascending order of keys by default then we go for TreeMap.Treemap doen't allow null key but allows duplicate values.
+
+HashMap VS HahTable:
+
+HashTable is a legacy class which is bought under Map interface, i.e, implemens the Map Interface
+Note:hashmap and hashtable both are used to store data in key value pairs both are using hashing technique to store unique keys.
+
+1.Hashmap is non synchrnise not thread safe                    1)Hashtable is Synchrnise 									and it is threadsafe.
+2.Hashmap allow one null key and Multiple null values.         2)Hashtable doen't 										allow any null key or value.
+3.it is Interduced in jdk1.2 version                           3)It is a legacy class 										introduced in 1.0v
+4.It is fast                                                   4)It is slow.
+
+Difference between collection interface and Collections class:
+
+Collection represent group of objects of a single unit.       
+Collections(Class) is used to operate on collection with serveral utility methods.
